@@ -1,0 +1,116 @@
+/*ESTILOS GENERALES*/
+body{
+    font-family:Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(54, 97, 54);
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container{ 
+    max-width: 400px;
+    margin:auto;
+    background: rgb(23, 76, 23);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+/* OCULTAR ELEMENTOS HASTA SER NECESITADOS*/
+.hidden{
+    display: none;
+}
+
+/*ESTILOS DE FORMULARIO*/
+#name-input {
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%
+}
+
+button{
+    padding: 10px, 20px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* BOTÓN DE INICIO*/
+#start-game{
+background-color: rgb(14, 56, 14);
+color: white;
+}
+
+#start-game:hover{
+    background-color: rgb(14, 56, 14);
+    }
+
+/*ÁREA DE JUEGO*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/*BOTONES DE COLORES*/
+.color-button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius:10px;
+    cursor:pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.color-button:active{
+    transform: scale(0.9);
+}
+
+/*COLORES*/
+.red{background-color: #ff4d4d;}
+.green{background-color: #4caf50;}
+.blue{background-color: #4d79ff;}
+.yellow{background-color: #ffcc00;}
+
+/*EFECTO DE ILUMINACIÓN CUANDO SE ACTIVA UN BOTÓN*/
+.active {
+    filter: brightness(1.5);
+}
+
+/*MARCADOR*/
+#scoreboard{
+    margin-top: 20px;
+}
+
+#restart-game{
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#restart-game:hover{
+    background-color: #d43f3f;
+}
+
+/*DISEÑO RESPONSIVE*/
+@media (max-width: 500px) {
+    .grid{
+        grid-template-columns: repeat(2, 80px);
+        grid-template-rows: repeat(2, 80px);
+    }
+    .color-button{
+        width: 80px;
+        height: 80px;
+    }
+}
