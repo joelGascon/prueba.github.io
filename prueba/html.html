@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Simon Says</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simon Says</h1>
+        <input type="text" id="playerName" placeholder="Ingresa tu nombre" />
+        <button id="startBtn">Iniciar Juego</button>
+        <div id="scoreboard">
+            <h2>Puntaje: <span id="score">0</span></h2>
+            <h2>Mejor Puntaje: <span id="highScore">0</span></h2>
+        </div>
+        <div id="scoreboard" style="display:none;">
+            <h2>Puntaje: <span id="score">0</span></h2>
+            <h2>Mejor Puntaje: <span id="highScore">0</span></h2>
+            <div id="scoreboardContainer"></div>
+        </div>
+        <div class="buttons">
+            <div class="color-button" id="red"></div>
+            <div class="color-button" id="green"></div>
+            <div class="color-button" id="blue"></div>
+            <div class="color-button" id="yellow"></div>
+        </div>
+        <button id="restartBtn" style="display:none;">Reiniciar Juego</button>
+    </div>
+    <script src="prueba.js"></script>
+</body>
+</html>
